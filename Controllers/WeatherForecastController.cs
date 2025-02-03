@@ -32,7 +32,7 @@ namespace webapigithubactions.Controllers
         [HttpGet(Name = "WelcomeGet")]
         public IActionResult WelcomeGet()
         {
-            return Ok();
+            return Ok("Welcome babu");
         }
     }
 }
