@@ -16,10 +16,10 @@ jobs:
             dotnet-version: 8.0.x
         
         - name: Install dependencies
-          run: dotnet restore ./webapigithubactions/webapigithubactions.csproj
+          run: dotnet restore webapigithubactions.csproj
 
         - name: Build
-          run: dotnet build ./webapigithubactions/webapigithubactions.csproj --configuration Release --no-restore
+          run: dotnet build webapigithubactions.csproj --configuration Release --no-restore
 
 
 
