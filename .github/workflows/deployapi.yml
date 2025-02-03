@@ -13,14 +13,14 @@ jobs:
         - name: setup .net core
           uses:  actions/setup-dotnet@v1
           with:
-            dotnet-version: 8.0
+            dotnet-version: 8.0.x
         
         - name: Install dependencies
           run: dotnet restore ./webapigithubactions/webapigithubactions.csproj
 
         - name: Build
           run: dotnet build ./webapigithubactions/webapigithubactions.csproj --configuration Release --no-restore
-          
+
 
 
   
